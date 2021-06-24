@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.flytre.stat_check.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "client": ["CreativeInventoryScreenMixin", "ItemStackMixin", "ScreenMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

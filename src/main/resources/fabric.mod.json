@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "stat_check",
+  "version": "${version}",
+  "name": "Stat Check",
+  "description": "Fun little item tooltips!",
+  "authors": [
+    "Flytre"
+  ],
+  "contact": {
+    "homepage": "https://flytre.net/"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/stat_check/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.flytre.stat_check.StatCheck"
+    ]
+  },
+  "mixins": [
+    "stat_check.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16",
+    "flytre_lib": ">=0.2.17"
+  }
+}

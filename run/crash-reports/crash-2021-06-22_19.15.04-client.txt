@@ -1,0 +1,193 @@
+---- Minecraft Crash Report ----
+// Oh - I know what I did wrong!
+
+Time: 6/22/21, 7:15 PM
+Description: Rendering screen
+
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at net.minecraft.client.render.BufferBuilder.popData(BufferBuilder.java:331)
+	at net.minecraft.client.render.BufferRenderer.draw(BufferRenderer.java:48)
+	at net.flytre.stat_check.StatTooltipComponent.drawText(StatTooltipComponent.java:148)
+	at net.flytre.stat_check.StatTooltipComponent.renderStat(StatTooltipComponent.java:96)
+	at net.flytre.stat_check.StatTooltipComponent.drawItems(StatTooltipComponent.java:75)
+	at net.minecraft.client.gui.screen.Screen.renderTooltipFromComponents(Screen.java:272)
+	at net.minecraft.client.gui.screen.Screen.renderTooltip(Screen.java:182)
+	at net.minecraft.client.gui.screen.Screen.renderTooltip(Screen.java:174)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.renderTooltip(CreativeInventoryScreen.java:656)
+	at net.minecraft.client.gui.screen.ingame.HandledScreen.drawMouseoverTooltip(HandledScreen.java:176)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.render(CreativeInventoryScreen.java:618)
+	at net.minecraft.client.render.GameRenderer.render(GameRenderer.java:885)
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1149)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:746)
+	at net.minecraft.client.main.Main.main(Main.java:191)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:146)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at net.minecraft.client.render.BufferBuilder.popData(BufferBuilder.java:331)
+	at net.minecraft.client.render.BufferRenderer.draw(BufferRenderer.java:48)
+	at net.flytre.stat_check.StatTooltipComponent.drawText(StatTooltipComponent.java:148)
+	at net.flytre.stat_check.StatTooltipComponent.renderStat(StatTooltipComponent.java:96)
+	at net.flytre.stat_check.StatTooltipComponent.drawItems(StatTooltipComponent.java:75)
+	at net.minecraft.client.gui.screen.Screen.renderTooltipFromComponents(Screen.java:272)
+	at net.minecraft.client.gui.screen.Screen.renderTooltip(Screen.java:182)
+	at net.minecraft.client.gui.screen.Screen.renderTooltip(Screen.java:174)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.renderTooltip(CreativeInventoryScreen.java:656)
+	at net.minecraft.client.gui.screen.ingame.HandledScreen.drawMouseoverTooltip(HandledScreen.java:176)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.render(CreativeInventoryScreen.java:618)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen
+	Mouse location: Scaled: (218, 137). Absolute: (872.468750, 548.890625)
+	Screen size: Scaled: (480, 270). Absolute: (1920, 1080). Scale factor of 4.000000
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['Player989'/97, l='ClientLevel', x=140.67, y=3.00, z=-81.47]]
+	Chunk stats: 841, 497
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (176,4,-128), Section: (at 0,4,0 in 11,0,-8; chunk contains blocks 176,0,-128 to 191,255,-113), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 16665 game time, 16665 day time
+	Server brand: fabric
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.addDetailsToCrashReport(ClientWorld.java:365)
+	at net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2416)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:763)
+	at net.minecraft.client.main.Main.main(Main.java:191)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:146)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Fabric Mods
+
+-- System Details --
+Details:
+	Minecraft Version: 1.17
+	Minecraft Version ID: 1.17
+	Operating System: Mac OS X (x86_64) version 10.15.7
+	Java Version: 16.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1072726528 bytes (1023 MiB) / 2147483648 bytes (2048 MiB) up to 2147483648 bytes (2048 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+	Identifier: Intel64 Family 6 Model 142 Stepping 10
+	Microarchitecture: unknown
+	Frequency (GHz): 2.30
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel Iris Plus Graphics 655
+	Graphics card #0 vendor: Intel
+	Graphics card #0 VRAM (MB): 1536.00
+	Graphics card #0 deviceId: 0x3ea5
+	Graphics card #0 versionInfo: Revision ID: 0x0001
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: LPDDR3
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: LPDDR3
+	Virtual memory max (MB): 11264.00
+	Virtual memory used (MB): 8486.09
+	Swap memory total (MB): 3072.00
+	Swap memory used (MB): 2727.00
+	JVM Flags: 1 total; -XX:+ShowCodeDetailsInExceptionMessages
+	Fabric Mods: 
+		fabric: Fabric API 0.34.9+1.17
+		fabric-api-base: Fabric API Base 0.3.0+a02b4463d5
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.0.2+a02b4463d5
+		fabric-biome-api-v1: Fabric Biome API (v1) 3.1.11+9e521e13d5
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.5+a02b4463d5
+		fabric-command-api-v1: Fabric Command API (v1) 1.1.1+a02b4463d5
+		fabric-commands-v0: Fabric Commands (v0) 0.2.2+92519afad5
+		fabric-containers-v0: Fabric Containers (v0) 0.1.12+a02b4463d5
+		fabric-content-registries-v0: Fabric Content Registries (v0) 0.2.2+a02b4463d5
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.1.5+be9da310d5
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 2.0.10+a02b4463d5
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.1.0+a02b4463d5
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.8+a02b4463d5
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.1+92519afad5
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.6+a02b4463d5
+		fabric-item-api-v1: Fabric Item API (v1) 1.2.4+a02b4463d5
+		fabric-item-groups-v0: Fabric Item Groups (v0) 0.2.10+b7ab6121d5
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.4+a02b4463d5
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.2+36b77c3ed5
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 1.4.4+a02b4463d5
+		fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.0.4+a02b4463d5
+		fabric-mining-levels-v0: Fabric Mining Levels (v0) 0.1.3+92519afad5
+		fabric-models-v0: Fabric Models (v0) 0.3.0+a02b4463d5
+		fabric-networking-api-v1: Fabric Networking API (v1) 1.0.11+b7ab6121d5
+		fabric-networking-blockentity-v0: Fabric Networking Block Entity (v0) 0.2.11+a02b4463d5
+		fabric-networking-v0: Fabric Networking (v0) 0.3.2+92519afad5
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 1.10.9+b7ab6121d5
+		fabric-object-builders-v0: Fabric Object Builders (v0) 0.7.3+a02b4463d5
+		fabric-particles-v1: Fabric Particles (v1) 0.2.4+a02b4463d5
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.7.9+a02b4463d5
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 0.4.2+a02b4463d5
+		fabric-renderer-indigo: Fabric Renderer - Indigo 0.4.8+a02b4463d5
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.0+a02b4463d5
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.1.5+a02b4463d5
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 0.1.13+a02b4463d5
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.2+92519afad5
+		fabric-rendering-v1: Fabric Rendering (v1) 1.6.0+a02b4463d5
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.4.7+b7ab6121d5
+		fabric-screen-api-v1: Fabric Screen API (v1) 1.0.3+b7ab6121d5
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.1.8+a02b4463d5
+		fabric-structure-api-v1: Fabric Structure API (v1) 1.1.10+be9da310d5
+		fabric-tag-extensions-v0: Fabric Tag Extensions (v0) 1.1.4+a02b4463d5
+		fabric-textures-v0: Fabric Textures (v0) 1.0.6+a02b4463d5
+		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.12+b7ab6121d5
+		fabricloader: Fabric Loader 0.11.3
+		java: Java HotSpot(TM) 64-Bit Server VM 16
+		minecraft: Minecraft 1.17
+		stat_check: Stat Check 1.0.0
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.2.1 build 12
+	Backend API: Intel(R) Iris(TM) Plus Graphics 655 GL version 4.1 INTEL-14.7.8, Intel Inc.
+	Window size: 1920x1080
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: <disabled>
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: Fabric Mods
+	Current Language: English (US)
+	CPU: 8x Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+	Player Count: 1 / 8; [ServerPlayerEntity['Player989'/97, l='ServerLevel[New World]', x=140.67, y=3.00, z=-81.47]]
+	Data Packs: vanilla, Fabric Mods
