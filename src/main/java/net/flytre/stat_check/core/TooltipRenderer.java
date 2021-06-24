@@ -1,4 +1,4 @@
-package net.flytre.stat_check;
+package net.flytre.stat_check.core;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.flytre.stat_check.api.DisplayType;
@@ -14,15 +14,12 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Matrix4f;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
 public class TooltipRenderer {
-
-    public static final Identifier TEXTURE = new Identifier("stat_check", "textures/gui/hud.png");
 
     public final ItemStats data;
 
@@ -79,7 +76,6 @@ public class TooltipRenderer {
         int y2 = (int) ((y - 16) / scale);
 
         matrices.push();
-        RenderSystem.setShaderTexture(0, TEXTURE);
         matrices.scale(scale, scale, scale);
 
 
@@ -114,7 +110,7 @@ public class TooltipRenderer {
 
     private void renderStat(MatrixStack matrices, TextRenderer textRenderer, int x, int maxWidth, int y, Map.Entry<DisplayType<?>, StatEntry<?>> entry, @Nullable ItemStats equipped) {
 
-        RenderSystem.setShaderTexture(0, TEXTURE);
+        RenderSystem.setShaderTexture(0, entry.getKey().getTexture());
 
         drawIcon(matrices, x, y, entry.getKey().getIconIndex());
         x += 18;
@@ -124,7 +120,7 @@ public class TooltipRenderer {
         drawText(matrices, textRenderer, x, y + 5, entry.getValue().getRenderedText());
         x += maxWidth;
 
-        RenderSystem.setShaderTexture(0, TEXTURE);
+        RenderSystem.setShaderTexture(0, DisplayType.DEFAULT_TEXTURE);
 
 
         if (!data.equals(equipped)) {

@@ -1,8 +1,12 @@
-package net.flytre.stat_check;
+package net.flytre.stat_check.core;
 
 import com.google.common.collect.ImmutableMap;
+import net.flytre.stat_check.StatCheck;
 import net.flytre.stat_check.api.DisplayType;
+import net.flytre.stat_check.api.DisplayTypeRegistry;
 import net.flytre.stat_check.api.StatEntry;
+import net.flytre.stat_check.config.Config;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
 
 import java.util.Map;
@@ -17,13 +21,19 @@ public class ItemStats {
 
     public ItemStats(ItemStack stack) {
         this.stack = stack;
-        Map<DisplayType<?>, StatEntry<?>> values = new TreeMap<>();
 
-        for (DisplayType<?> type : DisplayType.values())
-            if (type.shouldDisplay(stack))
-                values.put(type, type.getValue(stack));
+        if (MinecraftClient.getInstance().player == null)
+            this.values = ImmutableMap.of();
+        else {
+            Config config = StatCheck.CONFIG.getConfig();
+            Map<DisplayType<?>, StatEntry<?>> values = new TreeMap<>();
 
-        this.values = ImmutableMap.copyOf(values);
+            for (DisplayType<?> type : DisplayTypeRegistry.values())
+                if (config.renderedStats.get(type) && type.shouldDisplay(stack))
+                    values.put(type, type.getValue(stack));
+
+            this.values = ImmutableMap.copyOf(values);
+        }
     }
 
 

@@ -26,6 +26,6 @@
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16",
-    "flytre_lib": ">=0.2.17"
+    "flytre_lib": ">=0.2.18"
   }
 }

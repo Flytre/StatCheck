@@ -1,4 +1,4 @@
-package net.flytre.stat_check;
+package net.flytre.stat_check.core;
 
 import net.flytre.stat_check.api.DisplayType;
 import net.flytre.stat_check.api.StatEntry;

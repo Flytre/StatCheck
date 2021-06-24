@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0717797-1881-4483-90ac-af2c3f626dfe" name="Default Changelist" comment="Added C">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/api/DisplayTypeRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/mixin/RegistryInvoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StatCheck.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/EquipmentTooltips.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/EquipmentTooltips.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/BuiltinBiomesAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/MultiNoiseBiomeSourceAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/VanillaLayeredBiomeSourceAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/modification/BiomeAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/modification/BiomeEffectsAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/modification/BiomeWeatherAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/modification/GenerationSettingsAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/modification/SpawnDensityAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/biome/modification/SpawnSettingsAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/client/keybinding/KeyBindingAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/client/keybinding/KeyCodeAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/client/particle/ParticleManagerAccessor$SimpleSpriteProviderAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/client/particle/ParticleManagerAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/client/renderer/registry/EntityModelLayersAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/client/renderer/registry/LivingEntityRendererAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/command/HelpCommandAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/container/ServerPlayerEntityAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/gamerule/BooleanRuleAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/gamerule/GameRuleCommandAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/gamerule/GameRulesAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/gamerule/IntRuleAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/lookup/BlockEntityTypeAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/loot/table/LootPoolEntryTypesAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/loot/table/LootSupplierBuilderHooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/networking/accessor/CustomPayloadC2SPacketAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/networking/accessor/EntityTrackerAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/networking/accessor/LoginQueryResponseC2SPacketAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/networking/accessor/MinecraftClientAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/networking/accessor/ServerLoginNetworkHandlerAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/networking/accessor/ThreadedAnvilChunkStorageAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/AbstractBlockAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/AbstractBlockSettingsAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/CriteriaAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/DefaultAttributeRegistryAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/MaterialBuilderAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/ModelPredicateProviderRegistryAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/ModelPredicateProviderRegistrySpecificAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/PointOfInterestTypeAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/SpawnRestrictionAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/VillagerProfessionAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/object/builder/VillagerTypeAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/registry/sync/AccessorLevelStorageSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/registry/sync/AccessorRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/rendering/data/attachment/MixinViewableWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/resource/loader/FileResourcePackProviderAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/resource/loader/NamespaceResourceManagerAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/resource/loader/ResourcePackManagerAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/resource/loader/ResourcePackProfileAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/screen/ScreenAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/structure/BiomeAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/structure/FlatChunkGeneratorConfigAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/structure/StructureFeatureAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/structure/StructuresConfigAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/fabricmc/fabric/mixin/tag/extension/AccessorFluidTags.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/flytre/flytre_lib/mixin/AbstractBlockAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/flytre/flytre_lib/mixin/EntryListWidgetAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/flytre/flytre_lib/mixin/MiningToolItemAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/Bootstrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/advancement/criterion/Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/AbstractBlock$Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/AbstractBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/BambooBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/BambooSaplingBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/FireBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/Material$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/entity/AbstractFurnaceBlockEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/entity/BlockEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/block/entity/BlockEntityType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/Keyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/MinecraftClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/Mouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/color/block/BlockColors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/color/item/ItemColors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/font/FontManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/gui/hud/DebugHud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/gui/hud/InGameHud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/gui/screen/Screen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/gui/screen/ingame/CreativeInventoryScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/gui/screen/world/CreateWorldScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/gui/widget/EntryListWidget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/item/ModelPredicateProviderRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/network/ClientCommandSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/network/ClientLoginNetworkHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/network/ClientPlayNetworkHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/network/ClientPlayerEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/network/ClientPlayerInteractionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/option/GameOptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/option/KeyBinding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/particle/ParticleManager$SimpleSpriteProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/particle/ParticleManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/GameRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/RenderLayers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/WorldRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/block/BlockModelRenderer$AmbientOcclusionCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/block/BlockModelRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/block/BlockRenderManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/block/FluidRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/block/entity/BlockEntityRendererFactories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk$RebuildTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/chunk/ChunkBuilder$ChunkData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/chunk/ChunkRendererRegion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/entity/EntityRenderers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/entity/LivingEntityRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/entity/model/EntityModelLayers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/entity/model/EntityModels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/item/BuiltinModelItemRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/item/ItemModels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/item/ItemRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/model/BakedModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/model/BakedModelManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/render/model/ModelLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/resource/ClientBuiltinResourcePackProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/resource/language/LanguageManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/sound/SoundManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/texture/SpriteAtlasTexture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/texture/TextureManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/world/ClientChunkManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/world/ClientWorld$ClientEntityHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/client/world/ClientWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/entity/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/entity/LivingEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/entity/SpawnRestriction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/entity/attribute/DefaultAttributeRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/item/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/item/ItemGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/item/ItemStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/item/MiningToolItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/loot/LootManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/loot/LootPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/loot/LootTable$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/loot/LootTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/loot/entry/LootPoolEntryTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/network/ClientConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/network/packet/c2s/login/LoginQueryResponseC2SPacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/network/packet/c2s/play/CustomPayloadC2SPacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/recipe/RecipeManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/resource/DefaultResourcePack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/resource/FileResourcePackProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/resource/NamespaceResourceManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/resource/ReloadableResourceManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/resource/ResourcePackManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/resource/ResourcePackProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/MinecraftServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/PlayerManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/ServerAdvancementLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/command/CommandManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/command/GameRuleCommand$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/command/GameRuleCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/command/HelpCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/command/TeleportCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/function/FunctionLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/network/EntityTrackerEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/network/ServerLoginNetworkHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/network/ServerPlayNetworkHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/network/ServerPlayerEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/network/ServerPlayerInteractionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/world/ServerWorld$ServerEntityHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/world/ServerWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/world/ThreadedAnvilChunkStorage$EntityTracker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/server/world/ThreadedAnvilChunkStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/tag/FluidTags.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/tag/RequiredTagList$TagWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/tag/SetTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/tag/Tag$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/tag/TagManagerLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/util/SystemDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/util/collection/IdList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/util/dynamic/RegistryOps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/util/registry/DynamicRegistryManager$Impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/util/registry/DynamicRegistryManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/util/registry/Registry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/util/registry/SimpleRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/village/VillagerProfession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/village/VillagerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/ChunkSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/GameRules$BooleanRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/GameRules$IntRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/GameRules$Key.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/GameRules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/World.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/WorldView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/Biome$Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/Biome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/BiomeEffects.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/BuiltinBiomes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/GenerationSettings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/SpawnSettings$SpawnDensity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/SpawnSettings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/source/MultiNoiseBiomeSource$Preset.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/source/MultiNoiseBiomeSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/source/TheEndBiomeSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/biome/source/VanillaLayeredBiomeSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/chunk/WorldChunk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/gen/chunk/ChunkGeneratorSettings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/gen/chunk/FlatChunkGeneratorConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/gen/chunk/StructuresConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/gen/feature/StructureFeature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/level/storage/LevelStorage$Session.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/net/minecraft/world/poi/PointOfInterestType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/class/org/spongepowered/asm/synthetic/args/Args$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-06-23-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2021-06-23-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-06-23-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2021-06-23-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-06-23-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2021-06-23-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-06-23-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2021-06-23-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-06-23-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2021-06-23-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-06-23-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2021-06-23-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-06-23-7.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/DummyTooltipComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/core/DummyTooltipComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/ItemStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/core/ItemStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/StatCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/StatCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/TooltipRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/core/TooltipRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/api/DisplayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/api/DisplayType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/api/StatEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/api/StatEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/mixin/CreativeInventoryScreenMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/mixin/CreativeInventoryScreenMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/mixin/ItemStackMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/mixin/ItemStackMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/mixin/ScreenMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/flytre/stat_check/mixin/ScreenMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stat_check.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stat_check.mixins.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StatCheck" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StatCheck" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1uOnCsfYI0GYcQaf1brRdlyWQ8b" />
+  <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunManager" selected="Gradle.StatCheck [build]">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatCheck [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.StatCheck [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0717797-1881-4483-90ac-af2c3f626dfe" name="Default Changelist" comment="" />
+      <created>1624545379097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624545379097</updated>
+      <workItem from="1624545380475" duration="55000" />
+      <workItem from="1624545438818" duration="493000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

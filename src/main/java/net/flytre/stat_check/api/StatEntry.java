@@ -25,6 +25,7 @@ public abstract class StatEntry<T> {
 
     public abstract boolean isComparable();
 
+    @SuppressWarnings("unchecked")
     public @Nullable CompareResult compare(Object equipped) {
         assert value.getClass().isAssignableFrom(equipped.getClass());
         return compareTo((T) equipped);

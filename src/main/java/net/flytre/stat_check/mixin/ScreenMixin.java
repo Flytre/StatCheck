@@ -1,8 +1,10 @@
 package net.flytre.stat_check.mixin;
 
-import net.flytre.stat_check.DummyTooltipComponent;
-import net.flytre.stat_check.ItemStats;
-import net.flytre.stat_check.TooltipRenderer;
+import net.flytre.stat_check.StatCheck;
+import net.flytre.stat_check.config.Config;
+import net.flytre.stat_check.core.DummyTooltipComponent;
+import net.flytre.stat_check.core.ItemStats;
+import net.flytre.stat_check.core.TooltipRenderer;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.tooltip.TooltipComponent;
 import net.minecraft.client.util.math.MatrixStack;
@@ -45,7 +47,9 @@ public class ScreenMixin {
 
     @Inject(method = "renderTooltip(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/item/ItemStack;II)V", at = @At("TAIL"))
     public void stat_check$renderTooltip(MatrixStack matrices, ItemStack stack, int x, int y, CallbackInfo ci) {
-        new TooltipRenderer(stack).render(matrices, startX, endY);
+        Config config = StatCheck.CONFIG.getConfig();
+        if (!config.displayOnShiftOnly || Screen.hasShiftDown())
+            new TooltipRenderer(stack).render(matrices, startX, endY);
     }
 
     @Inject(method = "renderTooltipFromComponents", at = @At("TAIL"))
@@ -55,10 +59,12 @@ public class ScreenMixin {
 
     @Inject(method = "renderTooltipFromComponents", at = @At(value = "HEAD"))
     public void stat_check$addExtraDims(MatrixStack matrices, List<TooltipComponent> components, int x, int y, CallbackInfo ci) {
-        if (components.size() > 0 && !currentRenderedStack.isEmpty()) {
-            ItemStats stats = new ItemStats(currentRenderedStack);
-            if (stats.shouldRender())
-                components.add(new DummyTooltipComponent(stats));
-        }
+        Config config = StatCheck.CONFIG.getConfig();
+        if (!config.displayOnShiftOnly || Screen.hasShiftDown())
+            if (components.size() > 0 && !currentRenderedStack.isEmpty()) {
+                ItemStats stats = new ItemStats(currentRenderedStack);
+                if (stats.shouldRender())
+                    components.add(new DummyTooltipComponent(stats));
+            }
     }
 }
